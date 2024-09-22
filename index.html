@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React.JS BOT</title>
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/ai-bot-4419b.appspot.com/o/react-1-logo-png-transparent-removebg-preview.png?alt=media&token=8ecc8c85-81bc-4fec-a6a1-4decb706ab8f" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(14, 13, 13);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+            animation: spawnAnimation 2s ease-in-out;
+        }
+
+        @keyframes spawnAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>React.JS</h1>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="React.JS"
+  chat-icon="https://firebasestorage.googleapis.com/v0/b/ai-bot-4419b.appspot.com/o/react-1-logo-png-transparent-removebg-preview.png?alt=media&token=8ecc8c85-81bc-4fec-a6a1-4decb706ab8f"
+  agent-id="0f90013e-af17-433f-83f4-4a499da3e1f1"
+  language-code="en"
+></df-messenger>
+<style>
+    df-messenger {
+     --df-messenger-bot-message:#9e03ceef;
+     --df-messenger-button-titlebar-color: #9e03ceef;
+     --df-messenger-chat-background-color: #fcf9f9;
+     --df-messenger-font-color: white;
+     --df-messenger-send-icon: #bf02ee;
+     --df-messenger-user-message: #2364a1;
+    }
+  </style>
+</body>
+</html>
